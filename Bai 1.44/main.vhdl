@@ -1,3 +1,4 @@
+-- viết mô tả ngôn ngữ VHDL cho trigo JK sử dụng đầu vào tích cực thấp
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
