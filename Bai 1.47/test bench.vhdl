@@ -35,7 +35,7 @@ architecture behavi of test_bench is
             res <= '1';
             wait for 50ns;
             res <= '0';
-            wait for 100ns;
+            wait for 500ns;
         end process test;
 
     end behavi;

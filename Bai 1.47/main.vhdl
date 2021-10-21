@@ -11,18 +11,18 @@ entity main is
     end main;
 
 architecture behavi of main is
-    signal q1, q2 : std_logic_vector := "0000";
+    signal q1, q2 : std_logic_vector(3 downto 0) := "0000";
     begin
         process(clk, res)
         begin
-            if(res <= '1') then
+            if(res = '1') then
                 q1 <= "0000";
                 q2 <= "0000";
             else
                 if(rising_edge(clk)) then
-                    if(q2 <= "1001") then
+                    if(q2 = "1001") then
                         q2 <= "0000";
-                        if(q1 <= "1001") then
+                        if(q1 = "1001") then
                             q1 <= "0000";
                         else
                             q1 <= q1 + 1;
