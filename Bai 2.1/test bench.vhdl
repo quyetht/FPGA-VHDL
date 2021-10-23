@@ -4,7 +4,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 entity test_bench is
     end test_bench;
 
-architecture behavi of main is
+architecture behavi of test_bench is
     component main is 
         port(
             clk, res, ce, load : in std_logic;
